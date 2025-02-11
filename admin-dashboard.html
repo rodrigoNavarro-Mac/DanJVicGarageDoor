@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanJVic Garage Doors - Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="DanJVic Logo">
+                <span>DanJVic Admin</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Customers</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin-login.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="text-navy-blue mb-4">Admin Dashboard</h1>
+        
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="card bg-primary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Services</h5>
+                        <p class="card-text display-4">15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card bg-success text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Active Customers</h5>
+                        <p class="card-text display-4">87</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card bg-warning text-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Pending Reviews</h5>
+                        <p class="card-text display-4">3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card bg-info text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Scheduled Services</h5>
+                        <p class="card-text display-4">12</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header bg-navy-blue text-white">
+                        Recent Reviews
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                John Doe - Great service!
+                                <span class="badge bg-primary rounded-pill">5★</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Jane Smith - Quick and efficient
+                                <span class="badge bg-primary rounded-pill">4★</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Mike Johnson - Highly recommended
+                                <span class="badge bg-primary rounded-pill">5★</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header bg-navy-blue text-white">
+                        Upcoming Services
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Garage Door Installation
+                                <span class="badge bg-info rounded-pill">Tomorrow</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Spring Replacement
+                                <span class="badge bg-info rounded-pill">In 2 days</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Annual Maintenance
+                                <span class="badge bg-info rounded-pill">Next week</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="h5 mb-3">Contact Us</h4>
+                    <p>Phone: (555) 123-4567<br>
+                    Email: info@danjvicgaragedoors.com</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="h5 mb-3">Hours</h4>
+                    <p>Monday - Friday: 8am - 6pm<br>
+                    Saturday: 9am - 3pm<br>
+                    Sunday: Closed</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="h5 mb-3">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="me-3">Facebook</a>
+                        <a href="#" class="me-3">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4 border-light">
+            <p class="text-center mb-0">&copy; 2025 DanJVic Garage Doors. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
